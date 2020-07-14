@@ -31,7 +31,7 @@ img{
 
 #sabores, #pedido{
     color: white;
-    padding: 7%;
+    padding: 5%;
     text-align: center;
 }
 
@@ -50,9 +50,17 @@ input.quantidade{
     color: white;
 }
 
+
 form a {
 	cursor: pointer;
-	border: 1.3px solid #fff;
-	padding: 8px 14px;
+	border: 1px solid #fff;
+	padding: 7px 14px;
 	border-radius: 50%;
 } 
+
+
+input[type="submit"] {
+    width: 555px;
+    margin: 25px 0;
+    padding-top: 15px;
+}
