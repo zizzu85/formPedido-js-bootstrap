@@ -28,3 +28,18 @@ img{
     padding: 7%;
     text-align: center;
 }
+
+#contato{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 7%;
+    text-align: center;
+}
+
+input.quantidade{
+    text-align: center;
+    border: none;
+    width: 20%;
+    background-color: transparent;
+    color: white;
+}
