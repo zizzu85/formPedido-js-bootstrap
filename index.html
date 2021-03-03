@@ -1,162 +1,146 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html>
+
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<link rel="stylesheet" href="css/style.css" type="text/css"/>
-
-<title>Seu Titulo</title>
+	<title>Hello Pizza</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo|Reenie+Beanie|Roboto:400,500,500i" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-            <a class="navbar-brand" href="#">SuaEmpresa</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sabores"> Sabores </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pedido"> Pedido </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato"> Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section id="topo">
-        <div class="container">
-            <div class="row">
-                <div class="col col-sm">
-                    <ul>
-                        <li>Sabor</li>
-                        <li>Praticidade</li>
-                        <li>Agilidade</li>
-                        <li>Qualidade</li>
-                    </ul>                
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="sabores">
-        <div class="container">
-            <div class="row">
-                <div class="col col-sm">
-                    <h2>Sabores</h2>
-		            <p>Conheça os nossos
-			        <strong>deliciosos sabores </strong> de pizza!</p>
-                    <img src="img/sabores-pizzas.png"/>
-                </div>
-            </div>
-        </div>        
-    </section>
-    <section id="pedido">
-        <div class="container">
-            <div class="row">
-                <div class="col col-sm">
-                    <h2>PEDIDO</h2>
-                    <form name="pedido" action="http://seulocalderecebimento.php" method="POST">
-                        <table class="table table-dark bg-transparent">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Sabor</th>
-                                    <th scope="col">Quantidade</th>
-                                    <th scope="col" colspan="2">Preço(Unid)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="item">
-                                    <th scope="row">Calabresa</th>
-                                    <td>
-                                        <a class="btn-decrementa">-</a>
-                                        <input max="9" class="quantidade" value="0" type="number" name="calabresa">
-                                        <a class="btn-incrementa">+</a>
-                                    </td>
-                                    <td>R$</td><td class="preco-item">12.50</td>
-                                </tr>
-                                <tr class="item">
-                                    <th scope="row">Mussarela</th>
-                                    <td>
-                                        <a class="btn-decrementa">-</a>
-                                        <input max="9" class="quantidade" value="0" type="number" name="mussarela">
-                                        <a class="btn-incrementa">+</a>
-                                    </td>
-                                    <td>R$</td><td class="preco-item">11.50</td>
-                                </tr>
-                                <tr class="item">
-                                    <th scope="row">Pepperoni</th>
-                                    <td>
-                                        <a class="btn-decrementa">-</a>
-                                        <input max="9" class="quantidade" value="0" type="number" name="pepperoni">
-                                        <a class="btn-incrementa">+</a>
-                                    </td>
-                                    <td>R$</td><td class="preco-item">14.00</td>
-                                </tr>
-                                <tr class="item">
-                                    <th scope="row">Marguerita</th>
-                                    <td>
-                                        <a class="btn-decrementa">-</a>
-                                        <input max="9" class="quantidade" value="0" type="number" name="marguerita">
-                                        <a class="btn-incrementa">+</a>
-                                    </td>
-                                    <td>R$</td><td class="preco-item">13.00</td>
-                                </tr>
-                                <tr class="item">
-                                    <th scope="row">Portuguesa</th>
-                                    <td>
-                                        <a class="btn-decrementa">-</a>
-                                        <input max="9" class="quantidade" value="0" type="number" name="portuguesa">
-                                        <a class="btn-incrementa">+</a>
-                                    </td>
-                                    <td>R$</td><td class="preco-item">14.50</td>
-                                </tr>
-                                <tr class="item">
-                                    <th scope="row">Alho</th>
-                                    <td>
-                                        <a class="btn-decrementa">-</a>
-                                        <input max="9" class="quantidade" value="0" type="number" name="alho">
-                                        <a class="btn-incrementa">+</a>
-                                    </td>
-                                    <td>R$</td><td class="preco-item">13.50</td>
-                                </tr>
-                            <tfoot>
-                                <td></td><td>TOTAL</td>
-                                <td>R$</td><td id="total">0</td>
-                            </tfoot>
-                            </tbody>
-                        </table>
-                        <input type="submit" value="enviar" />
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer id="contato">
-        <div class="container">
-            <div class="row">
-                <div class="col col-sm">
-                    <a href="#">Hello Pizza</a>
-                    <p>Todos os direitos reservados &copy; 2018</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    </body>
+<body>
+	<header>
+		<h1>Hello Pizza</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#sabores">Sabores</a>
+				</li>
+				<li>
+					<a href="#pedido">Pedido</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<ul id="vantagens">
+			<li>Qualidade</li>
+			<li>Sabor</li>
+			<li>Praticidade</li>
+			<li>Agilidade</li>
+		</ul>
+	</section>
+	<section id="sabores">
+		<h2>Sabores</h2>
+		<p>Conheça os nossos
+			<strong>8 sabores </strong> de pizza!</p>
+		<img src="img/sabores-pizzas.png" id="pizza-sabores" />
+	</section>
+	<section id="pedido">
+		<h2>Pedido</h2>
+		<form name="pedido" action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="POST">
+			<table>
+				<thead>
+					<tr>
+						<th>Sabor</th>
+						<th>Quantidade</th>
+						<th>Preço por uni.</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="item">
+						<td>Calabresa</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="calabresa">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td class="preco-item">12.50</td>
+					</tr>
+					<tr class="item">
+						<td>Mozzarella</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="mozzarella">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td class="preco-item">11.50</td>
+					</tr>
+					<tr class="item">
+						<td>Pepperoni</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="pepperoni">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td class="preco-item">14.00</td>
+					</tr>
+					<tr class="item">
+						<td>Marguerita</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="marguerita">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td class="preco-item">13.00</td>
+					</tr>
+					<tr class="item">
+						<td>Portuguesa</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="portuguesa">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td class="preco-item">14.50</td>
+					</tr>
+					<tr class="item">
+						<td>Alho</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="alho">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td class="preco-item">13.50</td>
+					</tr>
+					<tr class="item">
+						<td>Toscana</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="toscana">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td class="preco-item">17.50</td>
+					</tr>
+					<tr class="item">
+						<td>Capriciosa</td>
+						<td>
+							<a class="btn-decrementa">-</a>
+							<input max="9" class="quantidade" value="0" type="number" name="capriciosa">
+							<a class="btn-incrementa">+</a>
+						</td>
+						<td class="preco-item">15.00</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2">Total</td>
+						<td id="total">0</td>
+					</tr>
+				</tfoot>
+			</table>
+			<input type="submit" value="enviar" style="width:99% ;"/>
+		</form>
+	</section>
+	<footer>
+		<a href="#" id="logo-hellopizza">Hello Pizza</a>
+		<p>Todos os direitos reservados &copy; 2018</p>
+	</footer>
+	<script src="app.js"></script>
+</body>
+
 </html>
